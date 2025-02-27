@@ -1,4 +1,4 @@
-package com.supinfo.guerredestoiles
+package com.supinfo.guerredestoiles.components
 
 import android.util.Log
 import androidx.compose.foundation.layout.Column
@@ -25,8 +25,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import io.ktor.util.reflect.instanceOf
+import com.supinfo.guerredestoiles.data.StarWarsRepository
 import kotlinx.coroutines.launch
+import com.supinfo.guerredestoiles.models.Character
 
 @Composable
 fun StarWarsApp(repository: StarWarsRepository) {
